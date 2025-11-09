@@ -1,5 +1,6 @@
 ---
 import { Github, LinkedIn } from "@components/icons";
+import { SkillsMarquee } from "@components/hero/SkillsMarquee";
 ---
 
 <section>
@@ -25,5 +26,6 @@ import { Github, LinkedIn } from "@components/icons";
         <LinkedIn class="size-7" />
       </a>
     </div>
+    <SkillsMarquee client:only="react" />
   </div>
 </section>

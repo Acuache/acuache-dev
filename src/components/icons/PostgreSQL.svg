@@ -1,4 +1,4 @@
-<svg xml:space="preserve" viewBox="0 0 432.071 445.383" {...Astro.props}
+<svg xml:space="preserve" viewBox="0 0 432.071 445.383"
   ><g
     style="fill-rule:nonzero;clip-rule:nonzero;fill:none;stroke:#fff;stroke-width:12.4651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4"
     ><path
@@ -24,5 +24,4 @@
     ></path><path
       d="M350.676 123.432c.863 15.994-3.445 26.888-3.988 43.914-.804 24.748 11.799 53.074-7.191 81.435"
     ></path></g
-  ></svg
->
+  ></svg>

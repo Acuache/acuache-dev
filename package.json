@@ -1,13 +1,6 @@
 {
   "name": "acuache-dev",
-  "type": "module",
   "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
     "@tailwindcss/vite": "^4.1.17",
@@ -18,5 +11,15 @@
     "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
     "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
