@@ -1,3 +1,78 @@
 ---
+import { Image } from "astro:assets";
+const LINKS = [
+  {
+    label: "Inicio",
+    to: "#",
+  },
+  {
+    label: "Proyectos",
+    to: "#",
+  },
+  {
+    label: "Sobre mi",
+    to: "",
+  },
+];
 
+const COLORS = [
+  {
+    color: "#00BFFF",
+  },
+  {
+    color: "#00FF99",
+  },
+  {
+    color: "#9D4EDD",
+  },
+  {
+    color: "#FF3B3B",
+  },
+  {
+    color: "#FFA50",
+  },
+  {
+    color: "#FFC8DD",
+  },
+  {
+    color: "#BDE0FE",
+  },
+  {
+    color: "#FDE68A",
+  },
+];
 ---
+
+<header class="py-2 flex">
+  <h3>ACUACHE</h3>
+  <nav>
+    <ul class="flex gap-5">
+      {
+        LINKS.map((link) => (
+          <li>
+            <a href={link.to}>{link.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+{
+  COLORS.map((color) => (
+    <div class="my-20">
+      <h1
+        class={`text-5xl  xs:text-6xl x white lg:text-7xl`}
+        style={{ color: color.color }}
+      >
+        MICHAEL <br /> ACUACHE
+      </h1>
+      <span class="text-xl xs:text-2xl">Desarrollador Web</span>
+      <p class="text-sm text-balance xs:text-base">
+        El código es mi herramienta, la experiencia del usuario mi objetivo.
+        Diseño y desarrollo experiencias digitales que conectan personas, marcas
+        y tecnología de forma simple, útil y atractiva.
+      </p>
+    </div>
+  ))
+}
