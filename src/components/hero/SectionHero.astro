@@ -1,15 +1,20 @@
 ---
 import { Github, LinkedIn } from "@components/icons";
 import { SkillsMarquee } from "@components/hero/SkillsMarquee";
+import { Image } from "astro:assets";
+import fotoAcuache from "../../assets/Acuache.png";
 ---
 
-<section>
-  <div class="flex flex-col gap-2">
-    <h1 class="text-5xl">MICHAEL <br /> ACUACHE</h1>
-    <span class="text-xl">Desarrollador Web</span>
-    <p class="text-base text-balance">
+<section class="flex flex-col gap-2 sm:flex-row sm:items-center">
+  <div class="flex flex-col gap-2 sm:basis-1/5 md:basis-1/2">
+    <h1 class="text-5xl xs:text-6xl text-white lg:text-7xl">
+      MICHAEL <br /> ACUACHE
+    </h1>
+    <span class="text-xl xs:text-2xl">Desarrollador Web</span>
+    <p class="text-sm text-balance xs:text-base">
       El código es mi herramienta, la experiencia del usuario mi objetivo.
-      Diseño interacciones que conectan personas, marcas y tecnología.
+      Diseño y desarrollo experiencias digitales que conectan personas, marcas y
+      tecnología de forma simple, útil y atractiva.
     </p>
     <div class="flex gap-4">
       <!-- Por el momento -->
@@ -26,6 +31,14 @@ import { SkillsMarquee } from "@components/hero/SkillsMarquee";
         <LinkedIn class="size-7" />
       </a>
     </div>
-    <SkillsMarquee client:only="react" />
+  </div>
+  <div class="max-w-85 mx-auto sm:basis-4/5 md:max-w-100 md:basis-1/2">
+    <Image
+      src={fotoAcuache}
+      alt="Foto de perfil Michael Acuache"
+      layout="constrained"
+      class="inset-shadow-2xl inset-shadow-red-700"
+    />
   </div>
 </section>
+<SkillsMarquee client:only="react" />

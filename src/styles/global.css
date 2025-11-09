@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 440px;
+}
+
+
 @font-face {
   font-family: 'Nebula';
   src: url('/fonts/Nebula/Nebula-Regular.otf') format('opentype');
