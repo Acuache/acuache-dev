@@ -15,36 +15,22 @@ const LINKS = [
   },
 ];
 
-const COLORS = [
-  {
-    color: "#00BFFF",
-  },
-  {
-    color: "#00FF99",
-  },
-  {
-    color: "#9D4EDD",
-  },
-  {
-    color: "#FF3B3B",
-  },
-  {
-    color: "#FFA50",
-  },
-  {
-    color: "#FFC8DD",
-  },
-  {
-    color: "#BDE0FE",
-  },
-  {
-    color: "#FDE68A",
-  },
-];
+const lastName = ["A", "C", "A", "C", "H", "E"];
 ---
 
-<header class="py-2 flex">
-  <h3>ACUACHE</h3>
+<header class="py-2 flex items-center justify-between my-2">
+  <div class="flex gap-1 group">
+    {
+      lastName.map((letter, i) => (
+        <h3
+          class="inline-block text-xl font-semibold tracking-wide transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:rotate-3 group-hover:scale-110 group-hover:text-st group-hover:drop-shadow-[0_0_10px_rgba(248,113,113,0.6)]"
+          style={`transition-delay: ${i * 50}ms`}
+        >
+          {letter}
+        </h3>
+      ))
+    }
+  </div>
   <nav>
     <ul class="flex gap-5">
       {
@@ -57,22 +43,3 @@ const COLORS = [
     </ul>
   </nav>
 </header>
-
-{
-  COLORS.map((color) => (
-    <div class="my-20">
-      <h1
-        class={`text-5xl  xs:text-6xl x white lg:text-7xl`}
-        style={{ color: color.color }}
-      >
-        MICHAEL <br /> ACUACHE
-      </h1>
-      <span class="text-xl xs:text-2xl">Desarrollador Web</span>
-      <p class="text-sm text-balance xs:text-base">
-        El código es mi herramienta, la experiencia del usuario mi objetivo.
-        Diseño y desarrollo experiencias digitales que conectan personas, marcas
-        y tecnología de forma simple, útil y atractiva.
-      </p>
-    </div>
-  ))
-}
