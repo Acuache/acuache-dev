@@ -36,7 +36,7 @@ const SKILL_ICONS: Record<string, any> = {
 
 export function CardProject({ title, description, skills, links }: ProjectProps) {
   return (
-    <article className='flex flex-col'>
+    <article className='flex flex-col' style={{ "viewTransitionName": title }}>
       <div className='w-full h-75 bg-red-600/20'>
 
       </div>
@@ -46,6 +46,7 @@ export function CardProject({ title, description, skills, links }: ProjectProps)
         <div className='flex items-center justify-between '>
           <div className='flex gap-2'>
             {skills.map((skill) => {
+              if (skill === "SALIENT") return
               const Icon = SKILL_ICONS[skill]
               return Icon
                 ? <Icon key={skill} className="size-6" title={skill} />

@@ -12,7 +12,7 @@
   {
     "title": "Dashboard de Tareas React",
     "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
-    "skills": ["React", "Zustand", "Zod", "TypeScript"],
+    "skills": ["React", "Zustand", "Zod", "TypeScript", "SALIENT"],
     "links": {
       "web": "www.example.com",
       "github": "www.example.com",
@@ -72,7 +72,7 @@
   {
     "title": "Notas con Sincronización",
     "description": "Aplicación de notas offline‑first con sincronización cuando vuelve la conexión. Estado global con Zustand, validación de esquemas con Zod y persistencia local con IndexedDB.",
-    "skills": ["React", "Zustand", "Zod", "TypeScript"],
+    "skills": ["React", "Zustand", "Zod", "TypeScript", "SALIENT"],
     "links": {
       "web": "www.example.com",
       "github": "www.example.com",

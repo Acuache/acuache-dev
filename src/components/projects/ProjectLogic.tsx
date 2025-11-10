@@ -66,28 +66,38 @@ const SKILLS_PROJECTS = [
 
 export const ProjectLogic = () => {
   const [allSkills, setAllSkills] = useState<string[]>([])
-  // const filterSkills = projects.map((project) => project.skills.includes())
+  const filteredProjects = projects.filter((project: ProjectProps) => {
+    if (allSkills.length === 0) return project.skills.includes("SALIENT")
+    return allSkills.every((skill) => project.skills.includes(skill))
+  })
 
   return (
     <>
-      <section className="flex flex-wrap items-center justify-center gap-6 max-w-lg mx-auto my-5">
-        <p>All</p>
+      <section className="flex flex-wrap items-center justify-center gap-6 max-w-2xl mx-auto my-5">
+        <p className='cursor-pointer'>Destacados</p>
         {
-          SKILLS_PROJECTS.map((skill, index) => (
-            <SkillProject key={index} setAllSkills={setAllSkills} label={skill.label}>
+          SKILLS_PROJECTS.map((skill) => (
+            <SkillProject key={skill.label} setAllSkills={setAllSkills} label={skill.label}>
               <skill.icon className="size-6" />
             </ SkillProject >
           ))
         }
-        <p>Remove</p>
+        <p onClick={() => setAllSkills([])} className='cursor-pointer'>Remove</p>
       </section>
-      <section className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-        {
-          projects.map((project: ProjectProps) => (
-            <CardProject {...project} />
-          ))
-        }
-      </section>
+
+      {
+        filteredProjects.length === 0 ? (
+          <p className='text-center'>No hay proyectos con esas tecnologias en especifico</p>
+        ) : (
+          <section className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+            {
+              filteredProjects.map((project: ProjectProps) => (
+                <CardProject key={project.title} {...project} />
+              ))
+            }
+          </section>
+        )
+      }
     </>
   )
 }
