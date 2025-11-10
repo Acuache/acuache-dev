@@ -12,7 +12,9 @@
     "paths": {
       "@components/*": [
         "./src/components/*"
-      ]
+      ],
+      "@data/*": ["./src/data/*"],
+      "@interface/*": ["./src/interface/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

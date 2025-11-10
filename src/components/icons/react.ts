@@ -15,4 +15,5 @@ export { default as TanStack } from './TanStack.svg?react';
 export { default as TypeScript } from './TypeScript.svg?react';
 export { default as Zod } from './Zod.svg?react';
 export { default as Zustand } from './Zustand.svg?react';
+export { default as Web } from './Web.svg?react';
 
