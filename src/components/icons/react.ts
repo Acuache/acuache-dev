@@ -17,5 +17,3 @@ export { default as Zod } from './Zod.svg?react';
 export { default as Zustand } from './Zustand.svg?react';
 export { default as Web } from './Web.svg?react';
 export { default as Star } from './Star.svg?react';
-export { default as Trash } from './Trash.svg?react';
-
