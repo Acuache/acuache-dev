@@ -91,11 +91,6 @@ export const ProjectLogic = () => {
         <Tippy
           key={"Destacado"}
           singleton={target}
-          appendTo={() => document.body}
-          delay={[0, 280]}
-          duration={[120, 260]}
-          placement="top"
-          animation="shift-toward"
           content={"Destacados"}
         >
           <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
@@ -107,11 +102,6 @@ export const ProjectLogic = () => {
           SKILLS_PROJECTS.map((skill) => (
             <Tippy
               key={skill.label}
-              singleton={target}
-              appendTo={() => document.body}
-              delay={[0, 280]}
-              duration={[120, 260]}
-              placement="top"
               animation="shift-toward"
               content={skill.label}
             >
