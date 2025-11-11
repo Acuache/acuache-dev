@@ -1,4 +1,4 @@
-import { Astroo, React, CSS, Figma, HTML, JavaScript, PostgreSQL, ReactRouter, Supabase, TailwindCSS, TanStack, TypeScript, Zod, Zustand } from '@components/icons/react'
+import { Astroo, React, CSS, Figma, HTML, JavaScript, PostgreSQL, ReactRouter, Supabase, TailwindCSS, TanStack, TypeScript, Zod, Zustand, Star, Trash } from '@components/icons/react'
 import { SkillProject } from '@components/projects/SkillProject'
 import { CardProject } from '@components/projects/CardProject'
 import { useState } from 'react'
@@ -74,15 +74,16 @@ export const ProjectLogic = () => {
   return (
     <>
       <section className="flex flex-wrap items-center justify-center gap-6 max-w-2xl mx-auto my-5">
-        <p className='cursor-pointer'>Destacados</p>
+        <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
+          <Star className="size-6" />
+        </SkillProject>
         {
           SKILLS_PROJECTS.map((skill) => (
-            <SkillProject key={skill.label} setAllSkills={setAllSkills} label={skill.label}>
+            <SkillProject key={skill.label} setAllSkills={setAllSkills} label={skill.label} active={allSkills.includes(skill.label)}>
               <skill.icon className="size-6" />
             </ SkillProject >
           ))
         }
-        <p onClick={() => setAllSkills([])} className='cursor-pointer'>Remove</p>
       </section>
 
       {
