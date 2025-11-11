@@ -1,10 +1,15 @@
+import { forwardRef } from 'react';
+
 interface SkillProjectProps {
   children: React.ReactNode
   label: string
   setAllSkills: React.Dispatch<React.SetStateAction<string[]>>
   active: boolean
 }
-export function SkillProject({ children, label, setAllSkills, active }: SkillProjectProps) {
+export const SkillProject = forwardRef<HTMLElement, SkillProjectProps>(function SkillProject(
+  { children, label, setAllSkills, active },
+  ref
+) {
   const handleClick = () => {
     if (label === "SALIENT") {
       setAllSkills([])
@@ -14,6 +19,7 @@ export function SkillProject({ children, label, setAllSkills, active }: SkillPro
   }
   return (
     <article
+      ref={ref}
       onClick={handleClick}
       className={`p-2.5 rounded-full border cursor-pointer select-none transition-colors duration-150 ${active ? "border-emerald-500 ring-1 ring-emerald-300" : "grayscale opacity-80 hover:opacity-100 hover:grayscale-0"}`}
     >
@@ -25,4 +31,6 @@ export function SkillProject({ children, label, setAllSkills, active }: SkillPro
       </div>
     </article>
   )
-}
+})
+
+SkillProject.displayName = "SkillProject"

@@ -4,6 +4,9 @@ import { CardProject } from '@components/projects/CardProject'
 import { useState } from 'react'
 import type { ProjectProps } from '@interface/ProjectProps'
 import projects from '@data/projects.json'
+import Tippy, { useSingleton } from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/shift-toward.css';
 
 const SKILLS_PROJECTS = [
   {
@@ -70,18 +73,54 @@ export const ProjectLogic = () => {
     if (allSkills.length === 0) return project.skills.includes("SALIENT")
     return allSkills.every((skill) => project.skills.includes(skill))
   })
+  const [source, target] = useSingleton();
 
   return (
     <>
       <section className="flex flex-wrap items-center justify-center gap-6 max-w-2xl mx-auto my-5">
-        <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
-          <Star className="size-6" />
-        </SkillProject>
+        <Tippy
+          singleton={source}
+          appendTo={() => document.body}
+          delay={[0, 280]}
+          duration={[120, 260]}
+          placement="top"
+          animation="shift-toward"
+          moveTransition="transform 0.22s ease-out"
+          className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
+        />
+        <Tippy
+          key={"Destacado"}
+          singleton={target}
+          appendTo={() => document.body}
+          delay={[0, 280]}
+          duration={[120, 260]}
+          placement="top"
+          animation="shift-toward"
+          content={"Destacados"}
+          className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
+        >
+          <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
+            <Star className="size-6" />
+          </SkillProject>
+        </Tippy>
         {
+
           SKILLS_PROJECTS.map((skill) => (
-            <SkillProject key={skill.label} setAllSkills={setAllSkills} label={skill.label} active={allSkills.includes(skill.label)}>
-              <skill.icon className="size-6" />
-            </ SkillProject >
+            <Tippy
+              key={skill.label}
+              singleton={target}
+              appendTo={() => document.body}
+              delay={[0, 280]}
+              duration={[120, 260]}
+              placement="top"
+              animation="shift-toward"
+              content={skill.label}
+              className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
+            >
+              <SkillProject setAllSkills={setAllSkills} label={skill.label} active={allSkills.includes(skill.label)}>
+                <skill.icon className="size-6" />
+              </ SkillProject >
+            </Tippy>
           ))
         }
       </section>
