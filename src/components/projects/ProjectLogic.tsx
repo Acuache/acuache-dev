@@ -86,7 +86,7 @@ export const ProjectLogic = () => {
           placement="top"
           animation="shift-toward"
           moveTransition="transform 0.22s ease-out"
-          className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
+          className='text-sm text-white border-2 border-st px-1 py-[2px] rounded-full'
         />
         <Tippy
           key={"Destacado"}
@@ -97,7 +97,6 @@ export const ProjectLogic = () => {
           placement="top"
           animation="shift-toward"
           content={"Destacados"}
-          className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
         >
           <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
             <Star className="size-6" />
@@ -115,7 +114,6 @@ export const ProjectLogic = () => {
               placement="top"
               animation="shift-toward"
               content={skill.label}
-              className='text-sm text-white border-2 border-st px-1.5 py-0.5 rounded-2xl'
             >
               <SkillProject setAllSkills={setAllSkills} label={skill.label} active={allSkills.includes(skill.label)}>
                 <skill.icon className="size-6" />
