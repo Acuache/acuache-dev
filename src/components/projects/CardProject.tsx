@@ -34,36 +34,49 @@ const SKILL_ICONS: Record<string, any> = {
   Figma,
 }
 
-export function CardProject({ title, description, skills, links }: ProjectProps) {
+export function CardProject({ id, title, description, skills, links }: ProjectProps) {
+  const imageUrl = new URL(`../../assets/images/projects/${id}.png`, import.meta.url).href
+
   return (
-    <article className='flex flex-col' style={{ "viewTransitionName": title }}>
-      <div className='w-full h-75 bg-red-600/20 relative'>
-        <div className='flex gap-2 absolute bottom-0 right-0 p-2'>
-          {skills.map((skill) => {
-            if (skill === "SALIENT") return
-            const Icon = SKILL_ICONS[skill]
-            return Icon
-              ? <Icon key={skill} className="size-6" title={skill} />
-              : <span key={skill}>{skill}</span>
-          })}
-        </div>
+    <article className='flex flex-col border' style={{ "viewTransitionName": title }}>
+      <div className='relative w-full aspect-9/4 bg-transparent overflow-hidden'>
+        <img
+          src={imageUrl}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          className="absolute scale-104 t-0 left-0 w-full h-full object-contain object-center "
+        />
 
       </div>
       <div className='p-5 flex flex-col gap-3 justify-between flex-1'>
         <h3 className='text-2xl'>{title}</h3>
-        <p className=''>{description}</p>
-        <div className='flex gap-6 items-center justify-between'>
-          <div className='flex gap-3'>
-            <a href={links.github} className=''>
-              <Github className='size-6' />
-            </a>
-            <a href={links.github} className=''>
-              <Web className='size-6' />
-            </a>
+        <p className='line-clamp-4'>{description}</p>
+        <div className='flex gap-6 items-center justify-between ml-4 <- controlar'>
+          <div className=' flex mt-2'>
+            {skills.map((skill, index) => {
+              if (skill === "SALIENT") return
+              const Icon = SKILL_ICONS[skill]
+              return <Icon
+                key={skill}
+                className={`size-11 p-2 rounded-full border -ml-4 relative bg-[#101010] duration-500 hover:-translate-y-5 hover:z-${10}`}
+                title={skill} style={{ "zIndex": index }}
+              />
+            })}
           </div>
-          <a href={links.seeMore}>Ver más</a>
+          <div className='flex gap-6 items-center justify-center'>
+            <div className='flex items-center justify-center gap-3'>
+              <a href={links.github} className=''>
+                <Github className='size-6' />
+              </a>
+              <a href={links.github} className=''>
+                <Web className='size-6' />
+              </a>
+            </div>
+            <a href={links.seeMore}>Ver más</a>
+          </div>
         </div>
       </div>
-    </article>
+    </article >
   )
 }
