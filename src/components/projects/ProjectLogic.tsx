@@ -109,7 +109,7 @@ export const ProjectLogic = () => {
         filteredProjects.length === 0 ? (
           <p className='text-center'>No hay proyectos con esas tecnologias en especifico</p>
         ) : (
-          <section className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <section className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {
               filteredProjects.map((project: ProjectProps) => (
                 <CardProject key={project.title} {...project} />

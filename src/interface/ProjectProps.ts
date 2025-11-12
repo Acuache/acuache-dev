@@ -7,6 +7,7 @@ export interface ProjectProps {
 }
 
 interface Link {
+  figma: string
   web: string
   github: string
   seeMore: string

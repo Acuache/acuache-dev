@@ -36,9 +36,8 @@ const SKILL_ICONS: Record<string, any> = {
 
 export function CardProject({ id, title, description, skills, links }: ProjectProps) {
   const imageUrl = new URL(`../../assets/images/projects/${id}.webp`, import.meta.url).href
-
   return (
-    <article className='flex flex-col border' style={{ "viewTransitionName": title }}>
+    <article className='flex flex-col border group' style={{ "viewTransitionName": title }}>
       <div className='relative w-full aspect-9/4 bg-transparent overflow-hidden'>
         <img
           src={imageUrl}
@@ -53,8 +52,9 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
         <h3 className='text-2xl'>{title}</h3>
         <p className='line-clamp-4'>{description}</p>
         <div className='flex gap-6 items-center justify-between ml-4 <- controlar'>
-          <div className=' flex mt-2'>
+          <div className=' flex mt-2 items-end'>
             {skills.map((skill, index) => {
+              if (!(index < 4)) return
               if (skill === "SALIENT") return
               const Icon = SKILL_ICONS[skill]
               return <Icon
@@ -63,17 +63,37 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
                 title={skill} style={{ "zIndex": index }}
               />
             })}
+            {
+              skills.length > 3 && (
+                <div className='ml-1 flex gap-1.5' aria-hidden="true">
+                  <div className='size-2 bg-white rounded-full relative animate-none group-hover:animate-dot-bounce [animation-delay:0ms] group-hover:bg-st' aria-hidden="true"></div>
+                  <div className='size-2 bg-white rounded-full relative animate-none group-hover:animate-dot-bounce [animation-delay:300ms] group-hover:bg-st' aria-hidden="true"></div>
+                  <div className='size-2 bg-white rounded-full relative animate-none group-hover:animate-dot-bounce [animation-delay:600ms] group-hover:bg-st' aria-hidden="true"></div>
+                </div>
+              )
+            }
           </div>
           <div className='flex gap-6 items-center justify-center'>
             <div className='flex items-center justify-center gap-3'>
-              <a href={links.github} className='' target="_blank" rel="noopener noreferrer">
-                <Github className='size-6' />
-              </a>
-              <a href={links.web} className='' target="_blank" rel="noopener noreferrer">
+              {
+                links.figma.length !== 0 && (
+                  <a href={links.figma} className='' target="_blank" rel="noopener noreferrer" aria-label={`Ir al figma del proyecto ${title}`}>
+                    <Figma className='size-6 ' />
+                  </a>
+                )
+              }
+              {
+                links.github.length !== 0 && (
+                  <a href={links.github} className='' target="_blank" rel="noopener noreferrer" aria-label={`Ir al github del proyecto ${title}`}>
+                    <Github className='size-6' />
+                  </a>
+                )
+              }
+              <a href={links.web} className='' target="_blank" rel="noopener noreferrer" aria-label={`Ir al github del proyecto ${title}`}>
                 <Web className='size-6' />
               </a>
             </div>
-            <a href={links.seeMore}>Ver más</a>
+            <a href={links.seeMore} aria-label={`Ver `}><h3>VER</h3></a>
           </div>
         </div>
       </div>

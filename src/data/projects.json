@@ -3,10 +3,11 @@
     "id": "animaciones-que-impactan",
     "title": "ANIMACIONES QUE IMPACTAN",
     "description": "Sitio estático de alto rendimiento construido con Astro y TailwindCSS, con SEO básico, modo oscuro y componentes accesibles. Incluye diseño responsive, imágenes optimizadas y despliegue continuo.",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
-      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
+      "figma": "",
       "github": "https://github.com/Acuache/animaciones-que-impactan",
+      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
       "seeMore": "www.example.com"
     }
   },
@@ -14,10 +15,11 @@
     "id": "game-perfect",
     "title": "GAME PERFECT",
     "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
-      "web": "https://game-perfect-michael-acuache.vercel.app/",
+      "figma": "",
       "github": "https://github.com/Acuache/page-web",
+      "web": "https://game-perfect-michael-acuache.vercel.app/",
       "seeMore": "www.example.com"
     }
   },
@@ -25,142 +27,11 @@
     "id": "ecommerce-frontend",
     "title": "E-COMMERCE FRONTEND",
     "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
-    "skills": ["React", "React Router", "TypeScript", "TailwindCSS"],
+    "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS"],
     "links": {
-      "web": "https://acuache-ecommerce.vercel.app/",
+      "figma": "https://www.figma.com/design/B4annw3TcXL6tVEYnKqWze/IHM?node-id=106-1225&t=lbH58YRkHCSpfhj8-1",
       "github": "https://github.com/Acuache/react-ecommerce-ac",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "SPA de Películas",
-    "description": "SPA con React Router para enrutamiento anidado y data fetching con TanStack Query (caché, revalidación y estados de carga). Manejo de errores y UI con búsqueda y paginación.",
-    "skills": ["React", "React Router", "TanStack Query", "JavaScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Clon de Dribbble",
-    "description": "Galería inspirada en Dribbble con diseño obtenido de Figma. Grid responsive, carga diferida de imágenes y componentes accesibles. Animaciones sutiles y soporte para tema oscuro.",
-    "skills": ["React", "Figma", "TailwindCSS"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Panel Admin con Supabase",
-    "description": "Panel administrativo con autenticación de Supabase, CRUD sobre tablas en PostgreSQL y políticas RLS. Paginación del lado del servidor y formularios tipados con TypeScript.",
-    "skills": ["Supabase", "PostgreSQL", "TypeScript", "React"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Landing Page de Producto",
-    "description": "Landing optimizada con Astro y TailwindCSS enfocada en métricas Core Web Vitals. Secciones hero, features y CTA, con imágenes adaptativas y copy SEO‑friendly.",
-    "skills": ["Astro", "TailwindCSS", "HTML", "CSS"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Notas con Sincronización",
-    "description": "Aplicación de notas offline‑first con sincronización cuando vuelve la conexión. Estado global con Zustand, validación de esquemas con Zod y persistencia local con IndexedDB.",
-    "skills": ["React", "Zustand", "Zod", "TypeScript", "SALIENT"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Catálogo e‑commerce",
-    "description": "Catálogo con listado, filtros combinados y carrito persistente. Enrutamiento con React Router y caché/estado del servidor con TanStack Query. Diseño responsive y accesible.",
-    "skills": ["React", "React Router", "TanStack Query", "TypeScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Tablero Kanban",
-    "description": "Tablero Kanban con drag & drop, columnas y tarjetas persistidas en Supabase. Soporta múltiples tableros, control de estados y feedback visual para acciones.",
-    "skills": ["React", "Supabase", "TailwindCSS", "TypeScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Sitio Marketing Clásico",
-    "description": "Landing tradicional enfocada en conversión con secciones hero, beneficios y CTA. Implementación semántica con HTML y estilos escalables con CSS, añadiendo pequeñas interacciones en JavaScript.",
-    "skills": ["HTML", "CSS", "JavaScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Generador de Formularios Tipados",
-    "description": "Generador de formularios dinámicos con validación a nivel de esquema usando Zod. Componentes controlados en React y seguridad de tipos extremo a extremo con TypeScript.",
-    "skills": ["React", "TypeScript", "Zod"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Documentación de API con Astro",
-    "description": "Sitio de documentación con Astro, estilos con TailwindCSS y ejemplos validados con Zod. Navegación rápida, búsqueda por secciones y componentes MDX reutilizables.",
-    "skills": ["Astro", "TailwindCSS", "TypeScript", "Zod"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "Reporte de Ventas",
-    "description": "Panel de ventas con tablas y gráficos. Capa de datos tipada en TypeScript y consultas agregadas a PostgreSQL para métricas clave, renderizado en React.",
-    "skills": ["React", "PostgreSQL", "TypeScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
-      "seeMore": "www.example.com"
-    }
-  },
-  {
-    "id": "animaciones-que-impactan",
-    "title": "SPA de Blog con Rutas",
-    "description": "Aplicación de blog con enrutamiento anidado y navegación sin recargas usando React Router. Componentes desacoplados, lazy loading y tipado con TypeScript.",
-    "skills": ["React Router", "TypeScript"],
-    "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
+      "web": "https://acuache-ecommerce.vercel.app/",
       "seeMore": "www.example.com"
     }
   }
