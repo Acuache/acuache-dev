@@ -107,7 +107,23 @@ export const ProjectLogic = () => {
 
       {
         filteredProjects.length === 0 ? (
-          <p className='text-center'>No hay proyectos con esas tecnologias en especifico</p>
+          <div className='mx-auto max-w-xl text-center border border-dashed border-st/60 rounded-2xl p-8 flex flex-col items-center gap-4'>
+
+            <h3 className='text-2xl'>Sin resultados</h3>
+            <p className='opacity-80 max-w-md'>
+              No hay proyectos que coincidan con esas tecnologías. Ajusta los filtros o vuelve a ver los destacados.
+            </p>
+            <div className='flex items-center gap-3'>
+              <button
+                type="button"
+                onClick={() => setAllSkills([])}
+                className='px-4 py-2 rounded-full border border-st text-white hover:bg-st hover:text-black transition-colors cursor-pointer'
+                aria-label='Limpiar filtros'
+              >
+                Limpiar filtros
+              </button>
+            </div>
+          </div>
         ) : (
           <section className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {

@@ -27,7 +27,7 @@
     "id": "ecommerce-frontend",
     "title": "E-COMMERCE FRONTEND",
     "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
-    "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS"],
+    "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS", "SALIENT"],
     "links": {
       "figma": "https://www.figma.com/design/B4annw3TcXL6tVEYnKqWze/IHM?node-id=106-1225&t=lbH58YRkHCSpfhj8-1",
       "github": "https://github.com/Acuache/react-ecommerce-ac",
