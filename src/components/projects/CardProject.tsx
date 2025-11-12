@@ -35,7 +35,7 @@ const SKILL_ICONS: Record<string, any> = {
 }
 
 export function CardProject({ id, title, description, skills, links }: ProjectProps) {
-  const imageUrl = new URL(`../../assets/images/projects/${id}.png`, import.meta.url).href
+  const imageUrl = new URL(`../../assets/images/projects/${id}.webp`, import.meta.url).href
 
   return (
     <article className='flex flex-col border' style={{ "viewTransitionName": title }}>
@@ -45,7 +45,7 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
           alt={title}
           loading="lazy"
           decoding="async"
-          className="absolute scale-104 t-0 left-0 w-full h-full object-contain object-center "
+          className="absolute scale-105 t-0 left-0 w-full h-full object-contain object-center "
         />
 
       </div>

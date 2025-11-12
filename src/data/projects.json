@@ -3,7 +3,7 @@
     "id": "animaciones-que-impactan",
     "title": "ANIMACIONES QUE IMPACTAN",
     "description": "Sitio estático de alto rendimiento construido con Astro y TailwindCSS, con SEO básico, modo oscuro y componentes accesibles. Incluye diseño responsive, imágenes optimizadas y despliegue continuo.",
-    "skills": ["HTML", "CSS"],
+    "skills": ["HTML", "CSS", "JavaScript"],
     "links": {
       "web": "www.example.com",
       "github": "www.example.com",
@@ -14,7 +14,7 @@
     "id": "game-perfect",
     "title": "GAME PERFECT",
     "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
-    "skills": ["HTML", "CSS"],
+    "skills": ["HTML", "CSS", "JavaScript"],
     "links": {
       "web": "www.example.com",
       "github": "www.example.com",
@@ -22,10 +22,10 @@
     }
   },
   {
-    "id": "animaciones-que-impactan",
-    "title": "Blog Técnico con Markdown",
+    "id": "ecommerce-frontend",
+    "title": "E-COMMERCE FRONTEND",
     "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
-    "skills": ["Astro", "CSS", "HTML", "JavaScript"],
+    "skills": ["React", "React Router", "TypeScript", "TailwindCSS"],
     "links": {
       "web": "www.example.com",
       "github": "www.example.com",
