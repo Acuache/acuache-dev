@@ -66,10 +66,10 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
           </div>
           <div className='flex gap-6 items-center justify-center'>
             <div className='flex items-center justify-center gap-3'>
-              <a href={links.github} className=''>
+              <a href={links.github} className='' target="_blank" rel="noopener noreferrer">
                 <Github className='size-6' />
               </a>
-              <a href={links.github} className=''>
+              <a href={links.web} className='' target="_blank" rel="noopener noreferrer">
                 <Web className='size-6' />
               </a>
             </div>

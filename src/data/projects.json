@@ -5,8 +5,8 @@
     "description": "Sitio estático de alto rendimiento construido con Astro y TailwindCSS, con SEO básico, modo oscuro y componentes accesibles. Incluye diseño responsive, imágenes optimizadas y despliegue continuo.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
+      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
+      "github": "https://github.com/Acuache/animaciones-que-impactan",
       "seeMore": "www.example.com"
     }
   },
@@ -16,8 +16,8 @@
     "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
+      "web": "https://game-perfect-michael-acuache.vercel.app/",
+      "github": "https://github.com/Acuache/page-web",
       "seeMore": "www.example.com"
     }
   },
@@ -27,8 +27,8 @@
     "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
     "skills": ["React", "React Router", "TypeScript", "TailwindCSS"],
     "links": {
-      "web": "www.example.com",
-      "github": "www.example.com",
+      "web": "https://acuache-ecommerce.vercel.app/",
+      "github": "https://github.com/Acuache/react-ecommerce-ac",
       "seeMore": "www.example.com"
     }
   },
