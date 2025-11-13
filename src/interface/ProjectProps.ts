@@ -4,6 +4,8 @@ export interface ProjectProps {
   description: string
   skills: string[]
   links: Link
+  success: string[]
+  challenges: string[]
 }
 
 interface Link {

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import Navbar from "@components/ui/Navbar.astro";
 ---
 
 <!doctype html>
@@ -14,6 +15,7 @@ import { ClientRouter } from "astro:transitions";
     <ClientRouter />
   </head>
   <body class="max-w-5xl mx-auto p-4 xs:p-6 xl:p-0">
+    <Navbar />
     <slot />
   </body>
 </html>

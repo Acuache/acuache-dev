@@ -2,14 +2,25 @@
   {
     "id": "animaciones-que-impactan",
     "title": "ANIMACIONES QUE IMPACTAN",
-    "description": "Sitio estático de alto rendimiento construido con Astro y TailwindCSS, con SEO básico, modo oscuro y componentes accesibles. Incluye diseño responsive, imágenes optimizadas y despliegue continuo.",
+    "description": "Proyecto estructurado con la metodología BEM, centrado en la creación de una plantilla animada con efectos visuales dinámicos. Incluye un diseño moderno y animaciones de bolitas flotantes que se desplazan de forma aleatoria en distintas secciones, generando una experiencia visual atractiva y fluida.",
     "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
       "figma": "",
       "github": "https://github.com/Acuache/animaciones-que-impactan",
       "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
       "seeMore": "www.example.com"
-    }
+    },
+    "success": [
+      "Organizar estilos de manera escalable utilizando BEM.", 
+      "Implementar y optimizar animaciones complejas para mejorar la experiencia visual.", 
+      "Aplicar principios de diseño y movimiento para crear interfaces más atractivas.", 
+      "Fortalecer la lógica de animaciones con JavaScript."
+    ],
+    "challenges": [
+      "Conseguir que las animaciones de las bolitas se vieran naturales y aleatorias.",
+      "Mantener un buen rendimiento sin afectar la fluidez del sitio.",
+      "Coordinar las animaciones y transiciones sin romper la estructura base del proyecto."
+    ]
   },
   {
     "id": "game-perfect",
@@ -21,7 +32,18 @@
       "github": "https://github.com/Acuache/page-web",
       "web": "https://game-perfect-michael-acuache.vercel.app/",
       "seeMore": "www.example.com"
-    }
+    },
+    "success": [
+      "Organizar estilos de manera escalable utilizando BEM.", 
+      "Implementar y optimizar animaciones complejas para mejorar la experiencia visual.", 
+      "Aplicar principios de diseño y movimiento para crear interfaces más atractivas.", 
+      "Fortalecer la lógica de animaciones con JavaScript."
+    ],
+    "challenges": [
+      "Conseguir que las animaciones de las bolitas se vieran naturales y aleatorias.",
+      "Mantener un buen rendimiento sin afectar la fluidez del sitio.",
+      "Coordinar las animaciones y transiciones sin romper la estructura base del proyecto."
+    ]
   },
   {
     "id": "ecommerce-frontend",
@@ -33,6 +55,17 @@
       "github": "https://github.com/Acuache/react-ecommerce-ac",
       "web": "https://acuache-ecommerce.vercel.app/",
       "seeMore": "www.example.com"
-    }
+    },
+    "success": [
+      "Organizar estilos de manera escalable utilizando BEM.", 
+      "Implementar y optimizar animaciones complejas para mejorar la experiencia visual.", 
+      "Aplicar principios de diseño y movimiento para crear interfaces más atractivas.", 
+      "Fortalecer la lógica de animaciones con JavaScript."
+    ],
+    "challenges": [
+      "Conseguir que las animaciones de las bolitas se vieran naturales y aleatorias.",
+      "Mantener un buen rendimiento sin afectar la fluidez del sitio.",
+      "Coordinar las animaciones y transiciones sin romper la estructura base del proyecto."
+    ]
   }
 ]

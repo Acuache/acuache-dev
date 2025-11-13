@@ -1,9 +1,8 @@
 ---
-import { Image } from "astro:assets";
 const LINKS = [
   {
     label: "Inicio",
-    to: "#",
+    to: "/",
   },
   {
     label: "Proyectos",
@@ -18,7 +17,9 @@ const LINKS = [
 const lastName = ["A", "C", "A", "C", "H", "E"];
 ---
 
-<header class="py-2 flex items-center justify-between my-2">
+<header
+  class="py-2 flex items-center justify-between my-2 sm:py-3 sticky top-0 z-20"
+>
   <div class="flex gap-1 group">
     {
       lastName.map((letter, i) => (
