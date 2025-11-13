@@ -1,0 +1,19 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { GetStaticPaths } from "astro";
+import projects from "@/data/projects.json";
+export const getStaticPaths = (() => {
+  const filter = projects.map((project) => ({
+    params: { id: project.id },
+    props: { project },
+  }));
+  return filter;
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.props;
+---
+
+<Layout>
+  <h3 class="text-5xl text-red-600 text-center">PRUEBA</h3>
+  <p>{JSON.stringify(project)}</p>
+</Layout>

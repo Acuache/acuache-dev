@@ -93,7 +93,7 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
                 <Web className='size-6' />
               </a>
             </div>
-            <a href={links.seeMore} aria-label={`Ver `}><h3>VER</h3></a>
+            <a href={`proyectos/${id}`} aria-label={`Ver `}><h3>VER</h3></a>
           </div>
         </div>
       </div>
