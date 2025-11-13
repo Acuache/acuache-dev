@@ -48,18 +48,18 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
         />
 
       </div>
-      <div className='p-5 flex flex-col gap-3 justify-between flex-1'>
+      <div className='p-5 flex flex-col gap-3 justify-between flex-1 flex-wrap'>
         <h3 className='text-2xl'>{title}</h3>
         <p className='line-clamp-4'>{description}</p>
-        <div className='flex gap-6 items-center justify-between ml-4 <- controlar'>
-          <div className=' flex mt-2 items-end'>
+        <div className='flex gap-6 justify-end xs:items-center xs:justify-between xs:ml-4 <- controlar '>
+          <div className='hidden xs:flex mt-2 items-end'>
             {skills.map((skill, index) => {
               if (!(index < 4)) return
               if (skill === "SALIENT") return
               const Icon = SKILL_ICONS[skill]
               return <Icon
                 key={skill}
-                className={`size-11 p-2 rounded-full border -ml-4 relative bg-[#101010] duration-500 hover:-translate-y-5 hover:z-${10}`}
+                className={`size-10 p-2 rounded-full border -ml-4 relative bg-[#101010] duration-500 hover:-translate-y-5 hover:z-${10}`}
                 title={skill} style={{ "zIndex": index }}
               />
             })}
@@ -77,7 +77,7 @@ export function CardProject({ id, title, description, skills, links }: ProjectPr
             <div className='flex items-center justify-center gap-3'>
               {
                 links.figma.length !== 0 && (
-                  <a href={links.figma} className='' target="_blank" rel="noopener noreferrer" aria-label={`Ir al figma del proyecto ${title}`}>
+                  <a href={links.figma} className='block md:hidden lg:block' target="_blank" rel="noopener noreferrer" aria-label={`Ir al figma del proyecto ${title}`}>
                     <Figma className='size-6 ' />
                   </a>
                 )

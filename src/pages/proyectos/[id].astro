@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import type { GetStaticPaths } from "astro";
 import projects from "@/data/projects.json";
+import { Arrow } from "@components/icons";
 import {
   Astroo,
   React as ReactIcon,
@@ -60,7 +61,16 @@ const imagenProject = PROJECT_IMAGES[`detail-${project.id}`];
 
 <Layout>
   <BackgroundArt />
-  <main class="flex flex-col gap-5 md:flex-row sm:mt-5">
+  <Arrow
+    id="arrow-back"
+    class="size-8 cursor-pointer hover:text-st duration-300 mt-10 rotate-90"
+    aria-label="Ir hacia atrás"
+  />
+  <main class="flex
+    flex-col
+    gap-5
+    md:flex-row
+    sm:mt-5">
     <div class="flex-1/3">
       <h1 class="text-4xl text-st mb-5 sm:text-5xl text-balance">
         {project.title}
@@ -108,3 +118,13 @@ const imagenProject = PROJECT_IMAGES[`detail-${project.id}`];
     </div>
   </div>
 </Layout>
+
+<script>
+  const handleAstroLoad = () => {
+    const arrowBack = document.querySelector("#arrow-back") as HTMLElement;
+    arrowBack.addEventListener("click", () => {
+      history.back();
+    });
+  };
+  document.addEventListener("astro:page-load", handleAstroLoad);
+</script>
