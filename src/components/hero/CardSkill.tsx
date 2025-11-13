@@ -5,7 +5,7 @@ interface CardSkillProps {
 }
 export const CardSkill = ({ label, children }: CardSkillProps) => {
   return (
-    <article className="flex gap-2 items-center mx-5 transition-shadow duration-300 hover:shadow-lg">
+    <article className="inline-flex items-center gap-2 mx-5 whitespace-nowrap transition-shadow duration-300 hover:shadow-lg">
       {children}
       <p className="text-lg">{label}</p>
     </article>

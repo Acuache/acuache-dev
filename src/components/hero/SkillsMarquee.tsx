@@ -54,16 +54,12 @@ const SKILLS = [
 // Faltaría mejorar el logo de TanStack
 export const SkillsMarquee = () => {
   return (
-    <>
-      <Marquee autoFill pauseOnHover gradient gradientColor="#101010" gradientWidth={80} delay={1} className="my-10">
-        {
-          SKILLS.map((skill, index) => (
-            <CardSkill label={skill.label}>
-              <skill.icon className="size-8" />
-            </CardSkill>
-          ))
-        }
-      </Marquee>
-    </>
+    <Marquee pauseOnHover gradient gradientColor="#101010" gradientWidth={80} speed={35} className="my-10">
+      {SKILLS.map((skill) => (
+        <CardSkill key={skill.label} label={skill.label}>
+          <skill.icon className="size-8" />
+        </CardSkill>
+      ))}
+    </Marquee>
   );
 };
