@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import { CardSkill } from '@components/hero/CardSkill'
-import { Astroo, React, CSS, Figma, HTML, JavaScript, PostgreSQL, ReactRouter, Supabase, TailwindCSS, TanStack, TypeScript, Zod, Zustand } from '@components/icons/react'
+import { Astroo, React, Figma, JavaScript, PostgreSQL, ReactRouter, Supabase, TailwindCSS, TanStack, TypeScript, Zod, Zustand } from '@components/icons/react'
 const SKILLS = [
   {
     label: "Astro",
@@ -51,7 +51,6 @@ const SKILLS = [
     icon: Zustand
   },
 ]
-// Faltaría mejorar el logo de TanStack
 export const SkillsMarquee = () => {
   return (
     <Marquee pauseOnHover gradient gradientColor="#101010" gradientWidth={80} speed={35} className="my-10">

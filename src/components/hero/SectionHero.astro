@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import fotoAcuache from "../../assets/Acuache.png";
 ---
 
-<section class="flex flex-col gap-2 sm:flex-row sm:items-center">
+<section class="flex flex-col gap-2 sm:flex-row sm:items-center mt-20">
   <div class="flex flex-col gap-2 sm:basis-1/5 md:basis-1/2">
     <h1 class="text-5xl text-st xs:text-6xl x white lg:text-7xl">
       MICHAEL <br /> ACUACHE
@@ -16,20 +16,30 @@ import fotoAcuache from "../../assets/Acuache.png";
       Diseño y desarrollo experiencias digitales que conectan personas, marcas y
       tecnología de forma simple, útil y atractiva.
     </p>
-    <div class="flex gap-4">
-      <!-- Por el momento -->
+    <div class="flex gap-4 items-center">
       <a
+        aria-label="Ir al Github de Michael Acuache"
         href="https://github.com/Acuache"
-        class="p-3 border border-white/30 rounded-2xl flex justify-center items-center"
+        class="relative flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 p-2 transition-all duration-300 hover:border-st/80 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,255,153,0.35)]"
       >
-        <Github class="size-7" />
+        <Github
+          class="relative size-6 transition-transform duration-300 group-hover:scale-110"
+        />
       </a>
       <a
+        aria-label="Ir al LinkedIn de Michael Acuache"
         href="https://www.linkedin.com/in/acuache/"
-        class="p-3 border border-white/30 rounded-2xl flex justify-center items-center"
+        class="relative flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 p-2 transition-all duration-300 hover:border-st/80 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,255,153,0.35)]"
       >
-        <LinkedIn class="size-7" />
+        <LinkedIn class="size-6" />
       </a>
+      <a
+        href="/public/CV-AcuacheYalle.pdf"
+        download="CV-AcuacheYalle.pdf"
+        class="border border-white/30 py-2 px-3 rounded-xl duration-300 hover:bg-st/40 hover:text-white hover:font-bold hover:shadow-[0_0_20px_rgba(0,255,153,0.35)]"
+      >
+        Descargar CV</a
+      >
     </div>
   </div>
   <div class="max-w-85 mx-auto sm:basis-4/5 md:max-w-100 md:basis-1/2">

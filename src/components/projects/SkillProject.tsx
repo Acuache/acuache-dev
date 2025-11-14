@@ -21,7 +21,7 @@ export const SkillProject = forwardRef<HTMLElement, SkillProjectProps>(function 
     <article
       ref={ref}
       onClick={handleClick}
-      className={`p-2.5 rounded-full border cursor-pointer select-none transition-colors duration-150 ${active ? "border-emerald-500 ring-1 ring-emerald-300" : "grayscale opacity-80 hover:opacity-100 hover:grayscale-0"}`}
+      className={`p-2.5 rounded-full border cursor-pointer select-none transition-colors duration-150 ${active ? " shadow-[0_0_20px_rgba(0,255,153,0.35)] border-emerald-500 ring-1 ring-emerald-300" : "grayscale opacity-80 hover:opacity-100 hover:grayscale-0"}`}
     >
       <div className="relative">
         {children}
