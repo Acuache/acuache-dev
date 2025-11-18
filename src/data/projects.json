@@ -3,7 +3,7 @@
     "id": "robbuild-ong",
     "title": "ROBBUILD - ONG",
     "colorBG": ["#b6ded7", "#2ea484"],
-    "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde construí una plataforma moderna que integra un sistema de donaciones mediante PayPal. Desde el inicio prioricé una experiencia rápida, fluida y visualmente consistente, aplicando optimizaciones de rendimiento y manteniendo una navegación limpia. El desarrollo partió desde prototipos en Figma, trabajando en alineación con el equipo de diseño y la visión del gerente. A lo largo del proyecto incorporé animaciones, mejoras visuales y ajustes de desempeño para entregar un producto final profesional y claro, en un proceso que tomó varios meses y requirió un alto nivel de detalle.",
+    "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde integré un sistema de donaciones con PayPal, creando una plataforma moderna, clara y orientada a generar confianza. El proyecto inició con un prototipo que diseñé personalmente en Figma, lo que me permitió construir una estructura visual sólida antes de pasar al desarrollo. Desde el comienzo puse un fuerte enfoque en la velocidad, la fluidez y la consistencia visual, aplicando optimizaciones de rendimiento y manteniendo una navegación limpia. A lo largo del proceso incorporé animaciones, mejoras visuales y múltiples ajustes que elevaron la calidad final del producto, siempre manteniendo atención al detalle y una comunicación constante con la organización.",
     "skills": ["React", "React Router", "Figma","TypeScript", "TailwindCSS","SALIENT"],
     "links": {
       "figma": "https://www.figma.com/design/IOi8w5HzQLD1iZOKGwe7vp/Robbuild?node-id=1-15&t=VvZnGQzzVNAwZUCP-1",
@@ -12,13 +12,14 @@
       "seeMore": "www.example.com"
     },
     "success": [
-      "Cómo trabajar en conjunto con un diseñador UX/UI, intercambiando ideas y mejorando versiones.", 
+      "Diseñar prototipos completos en Figma con la metodología 'ATOMIC DESIGN' y convertirlos en una implementación fiel.", 
       "Escuchar, entender y traducir correctamente las necesidades del cliente hacia la parte funcional y visual del proyecto.", 
       "Optimizar rendimiento y estructura general para lograr una mejor experiencia de usuario.", 
       "Aplicar animaciones avanzadas sin afectar la fluidez del sitio.",
       "Construir prototipos coherentes en Figma y trasladarlos correctamente al desarrollo.",
-      "Implementar un sistema de donación reales y comprender su flujo.",
-      "Profundizar en prácticas de SEO técnico y mejoras de carga."
+      "Implementar un sistema de donación real y comprender su flujo.",
+      "Profundizar en prácticas de SEO técnico y mejoras de carga.",
+      "Mantener comunicación efectiva con una organización y adaptarme al feedback."
     ],
     "challenges": [
       "Integrar correctamente el método de pago PayPal dentro del flujo del proyecto.",
