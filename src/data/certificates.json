@@ -4,14 +4,14 @@
     "transmitter": "Franklin Bustamante",
     "date": "Octubre - 2025",
     "link" : "www.example.com",
-    "icon": "Astroo"
+    "icon": "React"
   },
   {
     "title": "+100 Proyectos de Desarrollo Web con HTML, CSS y JavaScript",
-    "transmitter": "Michael Acuache",
+    "transmitter": "Victor Robles",
     "date": "Junio - 2025",
     "link" : "www.example.com",
-    "icon": "React"
+    "icon": "JavaScript"
   },
   {
     "title": "Master en CSS3 Avanzado: Maqueta 3 sitios web profesionales",
@@ -25,6 +25,6 @@
     "transmitter": "Angelo Leva",
     "date": "Mayo - 2025",
     "link" : "www.example.com",
-    "icon": "JavaScript"
+    "icon": "React"
   }
 ]
