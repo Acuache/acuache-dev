@@ -27,7 +27,7 @@
     "id": "game-perfect",
     "title": "GAME PERFECT",
     "colorBG": ["#329153", "#ffffff"],
-    "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
+    "description": "Proyecto desarrollado con una estructura basada en la metodología BEM, enfocado en construir un sitio moderno, organizado y totalmente responsivo. En este proyecto puse en práctica tanto Flexbox como CSS Grid para crear una distribución visual dinámica y bien equilibrada. Además, trabajé animaciones suaves para mostrar y ocultar las opciones del navbar mediante un efecto de desvanecimiento, logrando una navegación fluida y visualmente agradable.",
     "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
       "figma": "",
@@ -36,22 +36,22 @@
       "seeMore": "www.example.com"
     },
     "success": [
-      "Organizar estilos de manera escalable utilizando BEM.", 
-      "Implementar y optimizar animaciones complejas para mejorar la experiencia visual.", 
-      "Aplicar principios de diseño y movimiento para crear interfaces más atractivas.", 
-      "Fortalecer la lógica de animaciones con JavaScript."
+      "Utilizar de forma adecuada CSS Grid y Flexbox según cada necesidad de diseño.", 
+      "Aplicar semántica HTML y una estructura correcta para mejorar accesibilidad y organización.", 
+      "Estructurar correctamente un proyecto siguiendo los principios de BEM.", 
+      "Implementar animaciones y transiciones sutiles para mejorar la experiencia de usuario."
     ],
     "challenges": [
-      "Conseguir que las animaciones de las bolitas se vieran naturales y aleatorias.",
-      "Mantener un buen rendimiento sin afectar la fluidez del sitio.",
-      "Coordinar las animaciones y transiciones sin romper la estructura base del proyecto."
+      "Lograr que las opciones del navbar aparezcan y desaparezcan con un efecto suave de desvanecimiento.",
+      "Ajustar el diseño responsivo manejando Grid y Flex juntos sin romper la estructura.",
+      "Mantener el orden y escalabilidad del proyecto aplicando correctamente la metodología BEM."
     ]
   },
   {
     "id": "ecommerce-frontend",
     "title": "E-COMMERCE FRONTEND",
     "colorBG": ["#c7cdcd", "#6a6d70"],
-    "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
+    "description": "Proyecto desarrollado como mi primer ecommerce usando React, enfocado completamente en la lógica y experiencia de usuario del frontend. Incluye un sistema de login con ruta protegida, donde el acceso se valida mediante un número de DNI peruano o de forma libre sin registrarse. El usuario puede explorar categorías de productos, visualizar detalles individuales con React Router, aplicar filtros por tipo de ropa y gestionar un carrito dinámico con total fluidez.",
     "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS", "SALIENT"],
     "links": {
       "figma": "https://www.figma.com/design/B4annw3TcXL6tVEYnKqWze/IHM?node-id=106-1225&t=lbH58YRkHCSpfhj8-1",
@@ -60,15 +60,17 @@
       "seeMore": "www.example.com"
     },
     "success": [
-      "Organizar estilos de manera escalable utilizando BEM.", 
-      "Implementar y optimizar animaciones complejas para mejorar la experiencia visual.", 
-      "Aplicar principios de diseño y movimiento para crear interfaces más atractivas.", 
-      "Fortalecer la lógica de animaciones con JavaScript."
+      "Manejar la arquitectura de un proyecto en React desde cero.", 
+      "Crear rutas protegidas y gestionar navegación avanzada con React Router.", 
+      "Diseñar interfaces ordenadas y responsivas a partir de prototipos hechos en Figma.", 
+      "Implementar estados globales y lógica de carrito con persistencia en el navegador.",
+      "Consumir APIs de forma eficiente para validación y login."
     ],
     "challenges": [
-      "Conseguir que las animaciones de las bolitas se vieran naturales y aleatorias.",
-      "Mantener un buen rendimiento sin afectar la fluidez del sitio.",
-      "Coordinar las animaciones y transiciones sin romper la estructura base del proyecto."
+      "Lograr que los productos del carrito fueran persistentes utilizando localStorage.",
+      "Implementar un sistema de filtros dinámicos sin afectar el rendimiento.",
+      "Consumir y validar correctamente la API para el login, asegurando la ruta protegida.",
+      "Coordinar navegación, estados y vistas detalladas de productos con React Router."
     ]
   }
 ]
