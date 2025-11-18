@@ -1,8 +1,8 @@
 ---
 import { Github, LinkedIn } from "@components/icons";
-import { SkillsMarquee } from "@components/hero/SkillsMarquee";
 import { Image } from "astro:assets";
 import fotoAcuache from "../../assets/Acuache.png";
+import SkillsMarquee from "@components/hero/SkillsMarquee.astro";
 ---
 
 <section class="flex flex-col gap-2 sm:flex-row sm:items-center mt-20">
@@ -51,4 +51,4 @@ import fotoAcuache from "../../assets/Acuache.png";
     />
   </div>
 </section>
-<SkillsMarquee client:only="react" />
+<SkillsMarquee />
