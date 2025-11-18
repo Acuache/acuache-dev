@@ -144,6 +144,7 @@ const imagenProject = PROJECT_IMAGES[`detail-${project.id}`];
 <script>
   const handleAstroLoad = () => {
     const arrowBack = document.querySelector("#arrow-back") as HTMLElement;
+    if (!arrowBack) return;
     arrowBack.addEventListener("click", () => {
       history.back();
     });

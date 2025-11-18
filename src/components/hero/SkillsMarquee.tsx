@@ -53,7 +53,7 @@ const SKILLS = [
 ]
 export const SkillsMarquee = () => {
   return (
-    <Marquee pauseOnHover gradient gradientColor="#101010" gradientWidth={80} speed={35} className="my-10">
+    <Marquee gradient gradientColor="#101010" gradientWidth={80} speed={35} className="my-10" loop={0}>
       {SKILLS.map((skill) => (
         <CardSkill key={skill.label} label={skill.label}>
           <skill.icon className="size-8" />
