@@ -34,17 +34,18 @@ const SKILL_ICONS: Record<string, any> = {
   Figma,
 }
 
-export function CardProject({ id, title, description, skills, links }: ProjectProps) {
+export function CardProject({ id, title, description, skills, links, colorBG }: ProjectProps) {
   const imageUrl = new URL(`../../assets/images/projects/${id}.webp`, import.meta.url).href
   return (
-    <article className='flex flex-col border group' style={{ "viewTransitionName": title }}>
-      <div className='relative w-full aspect-9/4 bg-transparent overflow-hidden'>
+    <article className='flex flex-col border group' >
+      <div className='relative w-full aspect-9/4 bg-transparent overflow-hidden p-5' style={{ "background": `linear-gradient(to right, ${colorBG[0]}, ${colorBG[1]})` }}>
         <img
+          style={{ "viewTransitionName": id }}
           src={imageUrl}
           alt={title}
           loading="lazy"
           decoding="async"
-          className="absolute scale-105 t-0 left-0 w-full h-full object-contain object-center "
+          className="w-full h-full object-contain object-center "
         />
 
       </div>

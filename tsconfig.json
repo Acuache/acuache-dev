@@ -16,7 +16,7 @@
       ],
       "@data/*": ["./src/data/*"],
       "@interface/*": ["./src/interface/*"],
-      "@project-detail/*": ["./src/assets/images/project-detail/*"]
+      "@projects/*": ["./src/assets/images/projects/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

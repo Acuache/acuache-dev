@@ -2,6 +2,7 @@
   {
     "id": "animaciones-que-impactan",
     "title": "ANIMACIONES QUE IMPACTAN",
+    "colorBG": ["#27272e", "#4644dd"],
     "description": "Proyecto estructurado con la metodología BEM, centrado en la creación de una plantilla animada con efectos visuales dinámicos. Incluye un diseño moderno y animaciones de bolitas flotantes que se desplazan de forma aleatoria en distintas secciones, generando una experiencia visual atractiva y fluida.",
     "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
@@ -25,6 +26,7 @@
   {
     "id": "game-perfect",
     "title": "GAME PERFECT",
+    "colorBG": ["#329153", "#ffffff"],
     "description": "Aplicación de tareas con estado global en Zustand y validación de formularios con Zod. Soporta filtros, ordenamiento, persistencia local y arquitectura por features con tipado estricto.",
     "skills": ["JavaScript", "HTML", "CSS"],
     "links": {
@@ -48,6 +50,7 @@
   {
     "id": "ecommerce-frontend",
     "title": "E-COMMERCE FRONTEND",
+    "colorBG": ["#c7cdcd", "#6a6d70"],
     "description": "Blog estático con rutas dinámicas, paginación y categorías. Incluye metadatos para SEO, diseño responsive y generación de contenidos desde Markdown con componentes reutilizables.",
     "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS", "SALIENT"],
     "links": {

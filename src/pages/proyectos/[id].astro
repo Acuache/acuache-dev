@@ -48,15 +48,15 @@ const SKILL_ICONS: Record<string, any> = {
   Figma,
 };
 
-import detailAnimacionesQueImpactan from "@project-detail/detail-animaciones-que-impactan.png";
-import detailGamePerfect from "@project-detail/detail-game-perfect.png";
-import detailEcommerceFrontend from "@project-detail/detail-ecommerce-frontend.png";
+import AnimacionesQueImpactan from "@projects/animaciones-que-impactan.webp";
+import GamePerfect from "@projects/game-perfect.webp";
+import EcommerceFrontend from "@projects/ecommerce-frontend.webp";
 const PROJECT_IMAGES: Record<string, any> = {
-  "detail-animaciones-que-impactan": detailAnimacionesQueImpactan,
-  "detail-game-perfect": detailGamePerfect,
-  "detail-ecommerce-frontend": detailEcommerceFrontend,
+  "animaciones-que-impactan": AnimacionesQueImpactan,
+  "game-perfect": GamePerfect,
+  "ecommerce-frontend": EcommerceFrontend,
 };
-const imagenProject = PROJECT_IMAGES[`detail-${project.id}`];
+const imagenProject = PROJECT_IMAGES[project.id];
 ---
 
 <Layout>
@@ -103,9 +103,10 @@ const imagenProject = PROJECT_IMAGES[`detail-${project.id}`];
       class="flex justify-center items-center mx-auto max-w-120 md:max-w-none md:flex-2/3"
     >
       <Image
+        transition:name={project.id}
         src={imagenProject}
         layout="constrained"
-        alt={`Imagen del proyecto ${project.title}`}
+        alt={`Imagen del proyecto ${project.id}`}
       />
     </div>
   </main>
