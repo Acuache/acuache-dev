@@ -1,5 +1,35 @@
 [
   {
+    "id": "robbuild-ong",
+    "title": "ROBBUILD - ONG",
+    "colorBG": ["#b6ded7", "#2ea484"],
+    "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde construí una plataforma moderna que integra un sistema de donaciones mediante PayPal. Desde el inicio prioricé una experiencia rápida, fluida y visualmente consistente, aplicando optimizaciones de rendimiento y manteniendo una navegación limpia. El desarrollo partió desde prototipos en Figma, trabajando en alineación con el equipo de diseño y la visión del gerente. A lo largo del proyecto incorporé animaciones, mejoras visuales y ajustes de desempeño para entregar un producto final profesional y claro, en un proceso que tomó varios meses y requirió un alto nivel de detalle.",
+    "skills": ["React", "React Router", "Figma","TypeScript", "TailwindCSS","SALIENT"],
+    "links": {
+      "figma": "",
+      "github": "https://github.com/Acuache/animaciones-que-impactan",
+      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
+      "seeMore": "www.example.com"
+    },
+    "success": [
+      "Cómo trabajar en conjunto con un diseñador UX/UI, intercambiando ideas y mejorando versiones.", 
+      "Escuchar, entender y traducir correctamente las necesidades del cliente hacia la parte funcional y visual del proyecto.", 
+      "Optimizar rendimiento y estructura general para lograr una mejor experiencia de usuario.", 
+      "Aplicar animaciones avanzadas sin afectar la fluidez del sitio.",
+      "Construir prototipos coherentes en Figma y trasladarlos correctamente al desarrollo.",
+      "Implementar un sistema de donación reales y comprender su flujo.",
+      "Profundizar en prácticas de SEO técnico y mejoras de carga."
+    ],
+    "challenges": [
+      "Integrar correctamente el método de pago PayPal dentro del flujo del proyecto.",
+      "Optimizar el sitio para que cargue rápido, aunque incluya animaciones y contenido multimedia.",
+      "Ajustar varias secciones para que mantengan buena estructura en diferentes tamaños de pantalla.",
+      "Implementar mejoras de SEO sin afectar la experiencia visual.",
+      "Mantener consistencia entre el prototipo inicial y la versión final, incluso con cambios solicitados durante el desarrollo.",
+      "Coordinar en equipo y adaptarme al feedback de múltiples personas (diseñador, gerente, organización)."
+    ]
+  },
+  {
     "id": "animaciones-que-impactan",
     "title": "ANIMACIONES QUE IMPACTAN",
     "colorBG": ["#27272e", "#4644dd"],
@@ -52,7 +82,7 @@
     "title": "E-COMMERCE FRONTEND",
     "colorBG": ["#c7cdcd", "#6a6d70"],
     "description": "Proyecto desarrollado como mi primer ecommerce usando React, enfocado completamente en la lógica y experiencia de usuario del frontend. Incluye un sistema de login con ruta protegida, donde el acceso se valida mediante un número de DNI peruano o de forma libre sin registrarse. El usuario puede explorar categorías de productos, visualizar detalles individuales con React Router, aplicar filtros por tipo de ropa y gestionar un carrito dinámico con total fluidez.",
-    "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS", "SALIENT"],
+    "skills": ["React", "Figma","React Router", "TypeScript", "TailwindCSS"],
     "links": {
       "figma": "https://www.figma.com/design/B4annw3TcXL6tVEYnKqWze/IHM?node-id=106-1225&t=lbH58YRkHCSpfhj8-1",
       "github": "https://github.com/Acuache/react-ecommerce-ac",
