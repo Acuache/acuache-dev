@@ -6,9 +6,9 @@
     "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde construí una plataforma moderna que integra un sistema de donaciones mediante PayPal. Desde el inicio prioricé una experiencia rápida, fluida y visualmente consistente, aplicando optimizaciones de rendimiento y manteniendo una navegación limpia. El desarrollo partió desde prototipos en Figma, trabajando en alineación con el equipo de diseño y la visión del gerente. A lo largo del proyecto incorporé animaciones, mejoras visuales y ajustes de desempeño para entregar un producto final profesional y claro, en un proceso que tomó varios meses y requirió un alto nivel de detalle.",
     "skills": ["React", "React Router", "Figma","TypeScript", "TailwindCSS","SALIENT"],
     "links": {
-      "figma": "",
+      "figma": "https://www.figma.com/design/IOi8w5HzQLD1iZOKGwe7vp/Robbuild?node-id=1-15&t=VvZnGQzzVNAwZUCP-1",
       "github": "https://github.com/Acuache/animaciones-que-impactan",
-      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
+      "web": "https://robbuild.com/",
       "seeMore": "www.example.com"
     },
     "success": [
