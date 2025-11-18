@@ -1,8 +1,30 @@
 [
   {
-    "title": "Nombre del certificado",
+    "title": "React 19: De Cero a Avanzado con Supabase (FULL STACK)",
+    "transmitter": "Franklin Bustamante",
+    "date": "Octubre - 2025",
+    "link" : "www.example.com",
+    "icon": "Astroo"
+  },
+  {
+    "title": "+100 Proyectos de Desarrollo Web con HTML, CSS y JavaScript",
     "transmitter": "Michael Acuache",
-    "date": "01 de Enero del 2025",
-    "link" : "www.example.com"
+    "date": "Junio - 2025",
+    "link" : "www.example.com",
+    "icon": "React"
+  },
+  {
+    "title": "Master en CSS3 Avanzado: Maqueta 3 sitios web profesionales",
+    "transmitter": "Victor Robles",
+    "date": "Junio - 2025",
+    "link" : "www.example.com",
+    "icon": "JavaScript"
+  },
+  {
+    "title": "CURSO DE CERO A REACT",
+    "transmitter": "Angelo Leva",
+    "date": "Mayo - 2025",
+    "link" : "www.example.com",
+    "icon": "JavaScript"
   }
 ]

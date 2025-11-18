@@ -1,3 +1,38 @@
 ---
+import { Astroo, React, JavaScript } from "@components/icons";
+interface Props {
+  num: number;
+  title: string;
+  transmitter: string;
+  date: string;
+  link: string;
+  icon: string;
+}
+const { title, transmitter, date, link, icon, num } = Astro.props;
 
+const ICONS = {
+  Astroo: Astroo,
+  React: React,
+  JavaScript: JavaScript,
+};
+const ICON = ICONS[icon as keyof typeof ICONS];
 ---
+
+<article
+  class="relative flex gap-2 items-center border justify-center p-2 max-w-110 md:max-w-200 lg:p-3 mx-auto md:mx-0"
+>
+  <div
+    class="absolute bottom-2 right-2 bg-black/70 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg"
+  >
+    {num}
+  </div>
+  <div class="p-3">
+    <ICON class="size-15" />
+  </div>
+  <div class="flex flex-col flex-1 justify-between h-full">
+    <h3 class="line-clamp-2 min-h-8">{title}</h3>
+    <p><span class="text-st">Emisor: </span>{transmitter}</p>
+    <p>{date}</p>
+    <a href={link} class="w-fit">Ver certificado</a>
+  </div>
+</article>
