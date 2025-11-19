@@ -92,14 +92,20 @@ const lastName = ["A", "C", "A", "C", "H", "E"];
     const barsButton = document.querySelector("#bars");
     const menu = document.querySelector("#bodyBars");
     const menuClose = document.querySelector("#menuClose") as HTMLElement;
+    const closeMenu = () => {
+      menu?.classList.remove("isActive");
+    };
     if (barsButton && menu) {
       barsButton.addEventListener("click", () => {
         menu.classList.toggle("isActive");
       });
     }
-    if (!menu) return;
-    menuClose.addEventListener("click", () => {
-      menu.classList.toggle("isActive");
+    if (menuClose && menu) {
+      menuClose.addEventListener("click", closeMenu);
+    }
+    const menuLinks = menu?.querySelectorAll("a");
+    menuLinks?.forEach((link) => {
+      link.addEventListener("click", closeMenu);
     });
   };
   document.addEventListener("astro:page-load", toogleNenu);
