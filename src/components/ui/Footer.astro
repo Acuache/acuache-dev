@@ -14,76 +14,7 @@ const NAV_LINKS = [
 <footer
   class="relative mt-24 border-t border-white/10 bg-[radial-gradient(circle_at_top,rgba(0,255,153,0.15),transparent_55%)]"
 >
-  <div
-    class="mx-auto flex flex-col gap-12 px-6 py-16 md:flex-row md:justify-between"
-  >
-    <div class="space-y-4">
-      <h3
-        class="text-2xl max-w-lg font-semibold leading-tight text-white xs:text-3xl md:text-4xl md:max-w-xl"
-      >
-        Construyendo experiencias digitales con propósito y atención al detalle.
-      </h3>
-    </div>
-
-    <div class="flex flex-1 flex-col gap-10 md:flex-row md:justify-end">
-      <div>
-        <h3
-          class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60"
-        >
-          Navegación
-        </h3>
-        <ul class="mt-4 space-y-3 text-sm text-white/80">
-          {
-            NAV_LINKS.map((link) => (
-              <li>
-                <a
-                  href={link.href}
-                  class="transition-colors duration-200 hover:text-st"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-
-      <div>
-        <h3
-          class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60"
-        >
-          Contacto
-        </h3>
-        <ul class="mt-4 space-y-3 text-sm text-white/80">
-          <li>
-            <a
-              href="mailto:hola@acuache.dev"
-              class="transition-colors duration-200 hover:text-st"
-            >
-              hola@acuache.dev
-            </a>
-          </li>
-          <li class="text-white/60">Lima, Perú</li>
-        </ul>
-        <div class="mt-6 flex gap-3">
-          <ul class="flex gap-3">
-            <li>
-              <a href="#">
-                <Github class="size-6" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <LinkedIn class="size-6" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="border-t border-white/5 bg-black/60">
+  <div class="border-t border-white/5 bg-transparent">
     <div
       class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 py-6 text-xs text-white/60 md:flex-row md:justify-between"
     >
