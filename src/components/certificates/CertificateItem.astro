@@ -33,6 +33,12 @@ const ICON = ICONS[icon as keyof typeof ICONS];
     <h3 class="line-clamp-2 min-h-8">{title}</h3>
     <p><span class="text-st">Emisor: </span>{transmitter}</p>
     <p>{date}</p>
-    <a href={link} class="w-fit">Ver certificado</a>
+    <a
+      href={link}
+      target="_blank"
+      class="w-fit relative font-medium transition-all duration-300 ease-out hover:text-st before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-st before:transition-all before:duration-300 before:ease-out hover:before:w-full"
+    >
+      Ver certificado
+    </a>
   </div>
 </article>
