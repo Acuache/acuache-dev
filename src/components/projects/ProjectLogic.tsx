@@ -83,10 +83,11 @@ export const ProjectLogic = () => {
           appendTo={() => document.body}
           delay={[0, 280]}
           duration={[120, 260]}
+          arrow={false}
           placement="top"
           animation="shift-toward"
           moveTransition="transform 0.22s ease-out"
-          className='text-sm text-white border-2 border-st px-1 py-0.5 rounded-4xl'
+          className='text-sm text-white border border-st px-1 py-0.5'
         />
         <Tippy key={"Destacado"} singleton={target} content={"Destacados"}>
           <SkillProject active={allSkills.length === 0} setAllSkills={setAllSkills} label={"SALIENT"}>
