@@ -6,7 +6,7 @@ import type { ProjectProps } from '@interface/ProjectProps'
 import projects from '@data/projects.json'
 import Tippy, { useSingleton } from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/shift-toward.css';
+import 'tippy.js/animations/shift-away.css';
 
 const SKILLS_PROJECTS = [
   {
@@ -81,11 +81,11 @@ export const ProjectLogic = () => {
         <Tippy
           singleton={source}
           appendTo={() => document.body}
-          delay={[0, 280]}
-          duration={[120, 260]}
+          delay={[0, 100]}
+          duration={[100, 240]}
           arrow={false}
           placement="top"
-          animation="shift-toward"
+          animation="shift-away"
           moveTransition="transform 0.22s ease-out"
           className='text-sm text-white border border-st px-1 py-0.5'
         />
