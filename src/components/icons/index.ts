@@ -16,3 +16,5 @@ export { default as TypeScript } from './TypeScript.svg';
 export { default as Zod } from './Zod.svg';
 export { default as Zustand } from './Zustand.svg';
 export { default as Arrow } from './Arrow.svg';
+export { default as Bars } from './Bars.svg';
+export { default as Close } from './Close.svg';
