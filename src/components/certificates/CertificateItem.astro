@@ -19,7 +19,8 @@ const ICON = ICONS[icon as keyof typeof ICONS];
 ---
 
 <article
-  class="relative flex gap-2 items-center border justify-center p-2 max-w-110 w-full md:max-w-200 lg:p-3 mx-auto md:mx-0"
+  class="certificate-item relative flex gap-2 items-center border justify-center p-2 max-w-110 w-full md:max-w-200 lg:p-3 mx-auto md:mx-0 opacity-0 translate-y-8 transition-all duration-700 ease-out"
+  data-index={num - 1}
 >
   <div
     class="absolute bottom-2 right-2 bg-black/70 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shadow-lg"
@@ -42,3 +43,38 @@ const ICON = ICONS[icon as keyof typeof ICONS];
     </a>
   </div>
 </article>
+<script>
+  const initCertificateObserver = () => {
+    const certificateItems = document.querySelectorAll(".certificate-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const element = entry.target as HTMLElement;
+            const index = parseInt(element.dataset.index || "0");
+            const delay = index * 200;
+
+            setTimeout(() => {
+              element.classList.remove("opacity-0", "translate-y-8");
+              element.classList.add("opacity-100", "translate-y-0");
+            }, delay);
+
+            observer.unobserve(element);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.2,
+        rootMargin: "0px",
+      }
+    );
+
+    certificateItems.forEach((item) => {
+      observer.observe(item);
+    });
+  };
+
+  document.addEventListener("astro:page-load", initCertificateObserver);
+</script>
