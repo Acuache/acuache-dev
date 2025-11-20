@@ -19,7 +19,7 @@ const LINKS = [
   },
 ];
 
-const lastName = ["A", "C", "A", "C", "H", "E"];
+const lastName = ["A", "C", "U", "A", "C", "H", "E"];
 ---
 
 <header
@@ -44,8 +44,12 @@ const lastName = ["A", "C", "A", "C", "H", "E"];
         {
           LINKS.map((link) => (
             <li class="wit-max text-base">
-              <a href={link.to}>
+              <a
+                href={link.to}
+                class="relative group duration-300 hover:text-st "
+              >
                 <h4>{link.label}</h4>
+                <span class="absolute w-0 h-[2px] bottom-0 left-0 group-hover:right-0 group-hover:w-full bg-st duration-300" />
               </a>
             </li>
           ))

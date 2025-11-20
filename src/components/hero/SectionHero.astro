@@ -39,9 +39,15 @@ import SkillsMarquee from "@components/hero/SkillsMarquee.astro";
       <a
         href="https://drive.google.com/file/d/13Ix9Sq3Lpjg3x39kyVGp27Zx2Dy1Zjxh/view?usp=drive_link"
         target="_blank"
-        class="cv-link border border-white/30 py-2 px-3 rounded-xl duration-300 hover:bg-st/40 hover:text-white hover:font-bold hover:shadow-[0_0_20px_rgba(0,255,153,0.35)]"
+        class="cv-link py-2 px-5 duration-300 hover:text-st relative group"
       >
-        Descargar CV</a
+        <span
+          class="absolute top-0 left-0 w-2 h-2 border-st border-t-2 border-l-2 group-hover:w-full group-hover:h-full duration-300"
+        ></span>
+        <span
+          class="absolute right-0 bottom-0 w-2 h-2 border-st border-b-2 border-r-2 group-hover:w-full group-hover:h-full duration-300"
+        ></span>
+        Ver CV</a
       >
     </div>
   </div>
