@@ -1,5 +1,32 @@
 [
   {
+    "id": "social-network-by-acuache",
+    "title": "SocialHub — Red social básica en desarrollo",
+    "colorBG": ["#80b6d5", "#fdfdfd"],
+    "description": "Estoy creando una red social simple donde los usuarios pueden publicar fotos y videos, dar like y comentar con actualizaciones en tiempo real. Busco que la experiencia sea fluida, con un feed que carga contenido de forma continua mientras navegas. Este proyecto me está permitiendo entender la lógica interna de una plataforma social y cómo manejar datos que cambian constantemente. Aún está en desarrollo, pero ya cuenta con las funciones principales activas.",
+    "skills": ["Supabase", "Zustand", "TanStack Query", "TypeScript", "PostgreSQL", "React", "React Router", "TailwindCSS", "Zod"],
+    "links": {
+      "figma": "",
+      "github": "https://github.com/Acuache/social-network-by-acuache",
+      "web": "https://social-network-by-acuache-r2ev.vercel.app/"
+    },
+    "success" : [
+      "Gestionar estado global de forma limpia y escalable usando Zustand.",
+      "Manejar sincronización de datos y caché con TanStack Query.",
+      "Integrar Supabase para autenticación, base de datos y almacenamiento.",
+      "Diseñar la estructura de tablas en PostgreSQL pensando en relaciones y eficiencia.",
+      "Implementar actualizaciones en tiempo real mediante triggers, listeners y funcionalidades reactivas.",
+      "Conectar correctamente frontend y backend para un flujo fluido de publicaciones, likes y comentarios."
+    ], 
+    "challenges": [
+      "Configurar triggers en PostgreSQL/Supabase para lograr actualizaciones automáticas sin refrescar la página.",
+      "Mantener los datos sincronizados en tiempo real sin duplicados ni estados inconsistentes.",
+      "Diseñar una base de datos escalable para posts, usuarios, likes y comentarios.",
+      "Integrar múltiples tecnologías (Zustand, TanStack Query, Supabase) sin generar conflictos entre estados y peticiones.",
+      "Implementar infinite scroll con TanStack Query sin romper la paginación y manteniendo la experiencia fluida."
+    ]
+  },
+  {
     "id": "robbuild-ong",
     "title": "ROBBUILD - ONG",
     "colorBG": ["#b6ded7", "#2ea484"],
@@ -8,8 +35,7 @@
     "links": {
       "figma": "https://www.figma.com/design/IOi8w5HzQLD1iZOKGwe7vp/Robbuild?node-id=1-15&t=VvZnGQzzVNAwZUCP-1",
       "github": "",
-      "web": "https://robbuild.com/",
-      "seeMore": "www.example.com"
+      "web": "https://robbuild.com/"
     },
     "success": [
       "Diseñar prototipos completos en Figma con la metodología 'ATOMIC DESIGN' y convertirlos en una implementación fiel.", 
@@ -39,8 +65,7 @@
     "links": {
       "figma": "",
       "github": "https://github.com/Acuache/animaciones-que-impactan",
-      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/",
-      "seeMore": "www.example.com"
+      "web": "https://animaciones-que-impactan-michael-acuache.vercel.app/"
     },
     "success": [
       "Organizar estilos de manera escalable utilizando BEM.", 
@@ -63,8 +88,7 @@
     "links": {
       "figma": "",
       "github": "https://github.com/Acuache/page-web",
-      "web": "https://game-perfect-michael-acuache.vercel.app/",
-      "seeMore": "www.example.com"
+      "web": "https://game-perfect-michael-acuache.vercel.app/"
     },
     "success": [
       "Utilizar de forma adecuada CSS Grid y Flexbox según cada necesidad de diseño.", 
@@ -87,8 +111,7 @@
     "links": {
       "figma": "https://www.figma.com/design/B4annw3TcXL6tVEYnKqWze/IHM?node-id=106-1225&t=lbH58YRkHCSpfhj8-1",
       "github": "https://github.com/Acuache/react-ecommerce-ac",
-      "web": "https://acuache-ecommerce.vercel.app/",
-      "seeMore": "www.example.com"
+      "web": "https://acuache-ecommerce.vercel.app/"
     },
     "success": [
       "Manejar la arquitectura de un proyecto en React desde cero.", 
