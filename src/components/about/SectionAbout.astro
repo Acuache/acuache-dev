@@ -1,0 +1,26 @@
+---
+import Title from "@components/ui/Title.astro";
+import { Image } from "astro:assets";
+import Acuache from "@/assets/Acuache.png";
+---
+
+<section>
+  <Title>SOBRE MI </Title>
+  <div class="flex flex-col gap-5 md:flex-row">
+    <p class="md:flex-1 md:text-lg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sunt!
+      Tenetur magnam assumenda vitae praesentium molestias odit, distinctio
+      veritatis ipsa voluptatum unde ratione inventore voluptates minus, ut
+      molestiae, non nisi. Lorem ipsum, dolor sit amet consectetur adipisicing
+      elit. Ipsum minus accusamus obcaecati assumenda. Provident quos recusandae
+      iusto mollitia quidem excepturi hic iure ratione? Dignissimos vel
+      assumenda, recusandae nemo in ullam!
+    </p>
+    <Image
+      src={Acuache}
+      alt="Foto de Michael Acuache"
+      layout="constrained"
+      class="w-full h-full object-cover max-w-100 mx-auto md:flex-1 md:h-90"
+    />
+  </div>
+</section>
