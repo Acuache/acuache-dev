@@ -97,7 +97,7 @@ export function CardProject({ id, title, description, skills, links, colorBG }: 
                 <span className='absolute inset-0 rounded-full bg-blue-500/20 scale-0 group-hover/icon:scale-150 transition-transform duration-500 blur-md -z-10'></span>
               </a>
             </div>
-            <a href={`proyectos/${id}`} className='relative px-5 py-2 font-bold group/btn transition-all duration-300 hover:scale-105 hover:tracking-wider' aria-label={`Ver más sobre el proyecto`}>
+            <a href={`/proyectos/${id}`} className='relative px-5 py-2 font-bold group/btn transition-all duration-300 ' aria-label={`Ver más sobre el proyecto`}>
               <span className='absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-st transition-all duration-300 group-hover/btn:w-full group-hover/btn:h-full'></span>
               <span className='absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-st transition-all duration-300 group-hover/btn:w-full group-hover/btn:h-full'></span>
               <h3 className='relative z-10 transition-all duration-300 group-hover/btn:text-st'>VER</h3>
