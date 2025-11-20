@@ -37,7 +37,7 @@ const SKILL_ICONS: Record<string, any> = {
 export function CardProject({ id, title, description, skills, links, colorBG }: ProjectProps) {
   const imageUrl = new URL(`../../assets/images/projects/${id}.webp`, import.meta.url).href
   return (
-    <article className='flex flex-col border group' >
+    <article className='project-card flex flex-col border group' >
       <div className='relative w-full aspect-9/4 bg-transparent overflow-hidden p-5' style={{ "background": `linear-gradient(to right, ${colorBG[0]}, ${colorBG[1]})` }}>
         <img
           style={{ "viewTransitionName": id }}
