@@ -32,7 +32,7 @@ import { ProjectLogic } from "@components/projects/ProjectLogic";
     projectCards.forEach((card) => observer.observe(card));
   };
 
-  document.addEventListener("DOMContentLoaded", initProjectsObserver);
+  document.addEventListener("astro:page-load", initProjectsObserver);
 
   const observeProjectsContainer = () => {
     const container = document.querySelector("#section-projects");
