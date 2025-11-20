@@ -6,21 +6,67 @@ import Acuache from "@/assets/Acuache.png";
 
 <section id="sobre-mi" class="scroll-mt-24">
   <Title>SOBRE MI</Title>
-  <div class="flex flex-col gap-5 md:flex-row">
-    <p class="md:flex-1 md:text-lg">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sunt!
-      Tenetur magnam assumenda vitae praesentium molestias odit, distinctio
-      veritatis ipsa voluptatum unde ratione inventore voluptates minus, ut
-      molestiae, non nisi. Lorem ipsum, dolor sit amet consectetur adipisicing
-      elit. Ipsum minus accusamus obcaecati assumenda. Provident quos recusandae
-      iusto mollitia quidem excepturi hic iure ratione? Dignissimos vel
-      assumenda, recusandae nemo in ullam!
-    </p>
+  <div class="about-container flex flex-col gap-5 md:flex-row">
+    <div
+      class="about-text md:flex-1 md:text-lg flex flex-col gap-2 opacity-0 -translate-x-20 transition-all duration-700 ease-out"
+    >
+      <p class="">
+        Soy autodidacta y estudio los últimos ciclos de Ingeniería de Sistemas.
+        Estoy construyendo mi camino en el desarrollo frontend, avanzando
+        proyecto a proyecto, aprendiendo nuevas herramientas y refinando mi
+        forma de trabajar. Me interesa unir diseño, UX/UI y código para crear
+        experiencias claras y cuidadas.
+      </p>
+      <p class="">
+        Estoy dando mis primeros pasos como freelancer, con una mentalidad
+        enfocada en aprender y mejorar cada día. Me gusta asumir pequeños retos
+        que impulsen mi crecimiento y me permitan fortalecer mi forma de
+        trabajar como desarrollador.
+      </p>
+    </div>
     <Image
       src={Acuache}
       alt="Foto de Michael Acuache"
       layout="constrained"
-      class="w-full h-full object-cover max-w-100 mx-auto md:flex-1 md:h-90"
+      class="about-image w-full h-full object-cover max-w-100 mx-auto md:flex-1 md:h-85 opacity-0 translate-x-20 transition-all duration-700 ease-out"
     />
   </div>
 </section>
+
+<script>
+  const initAboutObserver = () => {
+    const aboutContainer = document.querySelector(".about-container");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const text = entry.target.querySelector(".about-text");
+            const image = entry.target.querySelector(".about-image");
+
+            if (text) {
+              text.classList.remove("opacity-0", "-translate-x-20");
+              text.classList.add("opacity-100", "translate-x-0");
+            }
+
+            if (image) {
+              image.classList.remove("opacity-0", "translate-x-20");
+              image.classList.add("opacity-100", "translate-x-0");
+            }
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.3,
+        rootMargin: "0px",
+      }
+    );
+
+    if (aboutContainer) {
+      observer.observe(aboutContainer);
+    }
+  };
+
+  document.addEventListener("astro:page-load", initAboutObserver);
+</script>
