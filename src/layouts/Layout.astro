@@ -33,7 +33,7 @@ import { ClientRouter } from "astro:transitions";
       content="Portafolio de Michael Acuache, desarrollador frontend autodidacta en crecimiento, con interés en diseño, UX/UI y la creación de experiencias web modernas y cuidadas."
     />
   </head>
-  <body class="max-w-5xl mx-auto p-4 xs:p-6 xl:p-0">
+  <body class="max-w-5xl mx-auto p-4 xs:p-6 xl:p-0 overflow-x-hidden">
     <slot />
   </body>
 </html>
@@ -42,6 +42,34 @@ import { ClientRouter } from "astro:transitions";
   html {
     scroll-behavior: smooth;
   }
+
+  /*Scroll CHROME*/
+  html::-webkit-scrollbar {
+    width: 25px;
+    background: transparent;
+  }
+  html::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #d3d3d4;
+  }
+  html:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 15px #00ff99;
+  }
+  html::-webkit-scrollbar-track {
+    margin: 10px 0;
+  }
+
+  /*Scroll MOZ*/
+  @supports (-moz-appearance: none) {
+    html {
+      scrollbar-width: auto;
+      scrollbar-color: #00ff99 transparent;
+    }
+  }
+
   body {
     background-color: #101010;
     color: #d8d8d8;
