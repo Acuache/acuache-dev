@@ -30,7 +30,7 @@
     "id": "robbuild-ong",
     "title": "ROBBUILD - ONG",
     "colorBG": ["#b6ded7", "#2ea484"],
-    "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde integré un sistema de donaciones con PayPal, creando una plataforma moderna, clara y orientada a generar confianza. El proyecto inició con un prototipo que diseñé personalmente en Figma, lo que me permitió construir una estructura visual sólida antes de pasar al desarrollo. Desde el comienzo puse un fuerte enfoque en la velocidad, la fluidez y la consistencia visual, aplicando optimizaciones de rendimiento y manteniendo una navegación limpia. A lo largo del proceso incorporé animaciones, mejoras visuales y múltiples ajustes que elevaron la calidad final del producto, siempre manteniendo atención al detalle y una comunicación constante con la organización.",
+    "description": "Proyecto desarrollado para la organización Robbuild en Lima, donde integré un sistema de donaciones con PayPal y diseñé el prototipo completo en Figma antes de iniciar el desarrollo. Busqué crear una plataforma moderna, clara y confiable, con un enfoque en velocidad, fluidez y coherencia visual. Durante el proceso añadí animaciones, optimizaciones y ajustes que mejoraron la experiencia final, trabajando siempre en comunicación directa con la organización.",
     "skills": ["React", "React Router", "Figma","TypeScript", "TailwindCSS","SALIENT"],
     "links": {
       "figma": "https://www.figma.com/design/IOi8w5HzQLD1iZOKGwe7vp/Robbuild?node-id=1-15&t=VvZnGQzzVNAwZUCP-1",
