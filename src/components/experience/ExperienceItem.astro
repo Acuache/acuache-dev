@@ -39,11 +39,17 @@ const { title, company, description, link, date } = Astro.props;
     {description}
     {
       link && (
-        <a href={link} class="flex gap-2 w-fit">
+        <a
+          href={link}
+          class="group flex gap-2 w-fit items-center transition-colors duration-300 hover:text-st"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Ir al certificado de practicas preprofecionales emitido por ${title}`}
+        >
           Saber más{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 icon icon-tabler icon-tabler-chevron-right"
+            class="w-5 icon icon-tabler icon-tabler-chevron-right transition-transform duration-300 group-hover:translate-x-1"
             width="24"
             height="24"
             viewBox="0 0 24 24"
